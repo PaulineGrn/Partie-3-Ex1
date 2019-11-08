@@ -1,0 +1,41 @@
+header{
+  background-image:url("../img/header.jpg");
+  background-size: cover;
+  text-align: center;
+  height: 410px
+}
+h1{
+  padding: 200px;
+  font-weight: bold;
+  font-size: 70px;
+  font-family: "Marker Felt,fantasy" ;
+}
+#nav li
+{
+   display:inline;
+   padding:0;
+   margin:0;
+}
+#nav
+{
+   margin:0;
+   padding:0;
+   background:#F09A1E url('nav_bg.jpg') 0 0 repeat-x;
+   float:left;
+   width:100%;
+   border:1px solid #F09A1E;
+   border-width:1px 0;
+}
+#nav a:link, #nav a:visited
+{
+   color:#000;
+   background:#F09A1E;
+   padding:20px 40px 4px 10px;
+   float:left;
+   width:auto;
+   border-right:1px solid #FFFFFF;
+   text-decoration:none;
+   font:bold 1em/1em Arial, Helvetica, sans-serif;
+   text-transform:uppercase;
+   text-shadow: 2px 2px 2px #555;
+}
