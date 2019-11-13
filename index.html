@@ -6,14 +6,44 @@
   <link href="assets/css/style.css" rel="stylesheet"/>
 </head>
 <body>
-  <header>
+  <!-- Titre de la page -->
+  <header id="texte">
     <h1>Voyages & Co</h1>
+    <!-- Balise nav c'est une barre de navigation -->
   </header>
-  <ul id="nav">
-   <li id="nav-home"><a href="#">Accueil</a></li>
-   <li id="nav-destinations"><a href="#">Destinations</a></li>
-   <li id="nav-reservation"><a href="#">Réservations</a></li>
-   <li id="nav-contact"><a href="#">Contact</a></li>
-</ul>
-</body>
-</html>
+  <nav>
+    <ul>
+      <!-- Balise A pour insérer un lien, # quand on veut pas mettre de lien -->
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#">Destinations</a></li>
+      <li><a href="#">Réservation</a></li>
+      <li><a href="#">Contact</a></li>
+      <li>
+        <form action="#" method="post">
+          <!-- Champs de remplissage -->
+          <input type="text" name="search" placeholder="Rechercher"/>
+          <!-- Mettre un button rechercher dans la barre de navigation -->
+          <input type="submit" name="searchButton" value="Rechercher">
+        </form>
+      </li>
+    </ul>
+  </nav>
+  <div id="presentation">
+    <p>Ensuite, on veut que les éléments de notre menu se placent les uns
+      à côté des autres et non pas les uns sous les autres. Pour faire cela, nous allons
+      devoir modifier le comportement par défaut des éléments li. Par défaut,
+      ces éléments sont de type block. On va modifier leur type en inline-block
+      grâce à la propriété display.
+    </p>
+  </div>
+    <!-- Block d'image -->
+    <div id="blockLine">
+      <div class="block"></div>
+      <img src="assets/img/JohnnyDepp.jpg" alt="photo de Johnny Depp" title="Johnny Depp"/>
+      <h2>Johnny Depp</h2>
+      <p>Johnny Depp le beau gosse</p>
+      <div class="block"></div>
+      <img src="assets/img/MontFuji.jpg" alt="photo Mont Fuji" title="Mont Fuji"/>
+    </div>
+  </body>
+  </html>

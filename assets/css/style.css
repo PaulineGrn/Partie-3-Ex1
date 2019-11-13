@@ -1,41 +1,61 @@
+/* .......................................Header..............................*/
+/* Mettre une image de fond avec le texte par dessus */
 header{
   background-image:url("../img/header.jpg");
+  /* background-size cover pour couvrir toute la page */
   background-size: cover;
+  /* Taille de l'image en hauteur au niveau de la page */
+  height: 410px;
+  /* capacité d'un élément flexible à modifier ses dimensions afin de remplir l'espace */
+  display: flex;
+  /* indique la façon dont l'espace doit être réparti entre et autour des éléments */
+  justify-content: center;
+  /* Center verticalement */
+  align-items: center;
+  /* Taille de la police */
+  font-size: 40px;
+}
+/* ......................................Navbar.............................. */
+ul{
+/* Pour enlever les puces devant les différents items de la barre de navigation */
+list-style-type: none;
+display: flex;
+/* spac-around pour espacer les mots de façon égal */
+justify-content: space-around;
+font-size: 25px;
+/* Couleur de fond de la barre de navigation et un dégradé de couleur avec linear */
+background: linear-gradient(#F09A1E,#F8C970);
+}
+/* .......................................Présentation....................... */
+#presentation{
+  padding: 30px;
+  background-color: #F09A1E;
+}
+#blockLine{
+  display: flex;
+}
+img{
+  width: 20%;
+}
+.block{
   text-align: center;
-  height: 410px
+  margin: 15px 15px;
 }
-h1{
-  padding: 200px;
-  font-weight: bold;
-  font-size: 70px;
-  font-family: "Marker Felt,fantasy" ;
+p{
+  text-align: justify;
 }
-#nav li
-{
-   display:inline;
-   padding:0;
-   margin:0;
+/* ....................................Mediaquery............................ */
+@media screen and (max width:992px){
+  #blockLine{
+    /* Affichage en colonne plutôt qu'en ligne au niveau du texte */
+    flex-direction: column;
+  }
 }
-#nav
-{
-   margin:0;
-   padding:0;
-   background:#F09A1E url('nav_bg.jpg') 0 0 repeat-x;
-   float:left;
-   width:100%;
-   border:1px solid #F09A1E;
-   border-width:1px 0;
-}
-#nav a:link, #nav a:visited
-{
-   color:#000;
-   background:#F09A1E;
-   padding:20px 40px 4px 10px;
-   float:left;
-   width:auto;
-   border-right:1px solid #FFFFFF;
-   text-decoration:none;
-   font:bold 1em/1em Arial, Helvetica, sans-serif;
-   text-transform:uppercase;
-   text-shadow: 2px 2px 2px #555;
+@media screen and (max-width:680px){
+  a, form{
+    display: none;
+  }
+  #navIcon{
+    display: block;
+  }
 }
