@@ -2,20 +2,22 @@
 <html lang=fr dir="ltr">
 <head>
   <meta charset="utf-8"/>
+  <!-- Meta viewport pour la compatibilité aux écrans mobiles -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Voyages & Co</title>
   <link href="assets/css/style.css" rel="stylesheet"/>
 </head>
 <body>
   <!-- Titre de la page -->
-  <header id="texte">
+  <header>
     <h1>Voyages & Co</h1>
-    <!-- Balise nav c'est une barre de navigation -->
   </header>
+  <!-- Balise nav c'est une barre de navigation -->
   <nav>
     <ul>
       <!-- Balise A pour insérer un lien, # quand on veut pas mettre de lien -->
       <li><a href="#">Accueil</a></li>
-      <li><a href="#">Destinations</a></li>
+      <li><a href="#blockLine">Destinations</a></li>
       <li><a href="#">Réservation</a></li>
       <li><a href="#">Contact</a></li>
       <li>
@@ -23,11 +25,13 @@
           <!-- Champs de remplissage -->
           <input type="text" name="search" placeholder="Rechercher"/>
           <!-- Mettre un button rechercher dans la barre de navigation -->
-          <input type="submit" name="searchButton" value="Rechercher">
+          <input type="submit" name="searchButton" value="Rechercher"/>
         </form>
       </li>
+      <li><i class="fas fa-bars" id="navIcon"></i></li>
     </ul>
   </nav>
+  <!-- ..................Présentation.................... -->
   <div id="presentation">
     <p>Ensuite, on veut que les éléments de notre menu se placent les uns
       à côté des autres et non pas les uns sous les autres. Pour faire cela, nous allons
@@ -36,14 +40,36 @@
       grâce à la propriété display.
     </p>
   </div>
-    <!-- Block d'image -->
-    <div id="blockLine">
-      <div class="block"></div>
+  <!-- Ligne contenant 3 blocs -->
+  <div id="blockLine">
+    <!-- Bloc1 -->
+    <div class="block">
       <img src="assets/img/JohnnyDepp.jpg" alt="photo de Johnny Depp" title="Johnny Depp"/>
       <h2>Johnny Depp</h2>
-      <p>Johnny Depp le beau gosse</p>
-      <div class="block"></div>
-      <img src="assets/img/MontFuji.jpg" alt="photo Mont Fuji" title="Mont Fuji"/>
+      <p>John Christopher Depp II, dit Johnny Depp, est un acteur,
+        réalisateur, guitariste, chanteur, scénariste et producteur de
+        cinéma américain, né le 9 juin 1963 à Owensboro
+      </p>
     </div>
-  </body>
-  </html>
+  </div>
+  <!-- Bloc2 -->
+  <div class="block">
+    <img src="assets/img/MontFuji.jpg" alt="photo Mont Fuji" title="Mont Fuji"/>
+    <h2>Mont Fuji</h2>
+    <p>Le mont Fuji est une montagne du centre du Japon qui se
+      trouve sur la côte sud de l'île de Honshū, au sud-ouest de
+      l'agglomération de Tokyo. Avec 3 776 mètres d'altitude, il est
+      le point culminant du Japon
+    </p>
+  </div>
+  <!-- Bloc3 -->
+  <div class="block">
+    <img src="assets/img/Japon.jpg" alt="Photo sanctuaire Japonais" title="Sanctuaire Japonais"/>
+    <h2>Sanctuaire Japonais</h2>
+    <p>Puisque les religions cohabitent en harmonie au Japon, il existe
+      deux grands types de monuments religieux au Japon : les temples
+      bouddhistes et les sanctuaires shinto.
+    </p>
+  </div>
+</body>
+</html>
